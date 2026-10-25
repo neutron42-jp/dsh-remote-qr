@@ -1,0 +1,6 @@
+# Registers the pair of halves: the Host route that builds the tokenized URL and
+# the sidebar action that shows it with a QR code.
+- insert:
+    - id: rdsh-remote-link
+      name: "rdsh-remote-link"
+      config: {}

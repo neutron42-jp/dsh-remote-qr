@@ -1,0 +1,42 @@
+{
+  "name": "rdsh-remote-link",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sidebar button that shows this Web GUI's tokenized URL and QR code, so another device can pair by scanning.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "vendor/qrcode.js",
+    "vendor/LICENSE-qrcode-svg",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "test/*.test.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "meta": {
+    "title": "Remote link / QR",
+    "description": "Adds a sidebar button that shows this Web GUI's tokenized URL and QR code, so a phone or another device can pair by scanning."
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

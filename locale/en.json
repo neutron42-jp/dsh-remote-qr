@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Remote link / QR",
+    "description": "Adds a sidebar button that shows this Web GUI's tokenized URL and QR code, so a phone or another device can pair by scanning."
+  }
+}
