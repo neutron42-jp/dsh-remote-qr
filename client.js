@@ -43,7 +43,7 @@ window.__ModuleLoader__.load({
         'panel.loading': 'Building the link…',
         'panel.error': 'Could not build the link.',
         'panel.note':
-          'Works until dsh restarts. A device that scanned once stays signed in for 30 days.',
+          'Works until dsh restarts. A device that opened it once stays signed in for 30 days.',
         'warn.loopbackOnly':
           'This server advertises a loopback address only, so another device cannot reach it. Start dsh with --public-url.',
         'warn.tailscaleUnavailable':
@@ -83,6 +83,7 @@ window.__ModuleLoader__.load({
 .rl-close{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;padding:0;border:0;border-radius:7px;background:transparent;color:var(--dsw-alias-label-secondary,#cfd3d6);cursor:pointer}
 .rl-close:hover{background:var(--dsw-alias-interactive-bg-hover,rgba(255,255,255,.08))}
 .rl-qr{display:block;width:100%;max-width:260px;height:auto;aspect-ratio:1/1;margin:0 auto;border-radius:8px;background:#fff}
+@media (max-width:760px){.rl-qr{display:none}}
 .rl-url{display:block;max-height:84px;overflow:auto;padding:6px 8px;border-radius:8px;background:var(--dsw-alias-bg-layer-2,rgba(255,255,255,.06));color:var(--dsw-alias-label-secondary,#cfd3d6);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.45;word-break:break-all;user-select:all}
 .rl-actions{display:flex;gap:8px}
 .rl-actions button{flex:1;min-height:30px;border:0;border-radius:8px;font:inherit;font-size:12px;cursor:pointer}

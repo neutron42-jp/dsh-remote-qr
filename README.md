@@ -19,6 +19,8 @@ It works with any Web profile. The URL is whatever the Host advertises — no ha
 
 The panel is lifted into the browser's top layer where the Popover API exists, so it is never clipped by the sidebar column and never sits under a mobile drawer.
 
+A QR code only helps the device that is *not* showing it, so the panel hides it below 760px: a phone gets the URL and the copy button, a desktop gets the QR the phone scans.
+
 It sits in the sidebar foot, beside Settings:
 
 ![The action in the sidebar foot](docs/sidebar-button.png)
